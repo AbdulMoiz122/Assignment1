@@ -1,0 +1,7 @@
+# Question 2
+df['state']=df['state'].astype('str')
+lbl=['malignant','benign','non-nodule']
+df['state'].value_counts()
+b=plt.pyplot.pie(df["state"].value_counts(),explode=[0.1,0.1,0.1],
+                 shadow=True,labels=['malignant','benign','non-nodule'],autopct='%1.1f%%',startangle=-90)
+plt.pyplot.pie(df["diagnosis"].value_counts())
