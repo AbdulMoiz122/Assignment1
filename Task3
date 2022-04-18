@@ -1,0 +1,5 @@
+# Question 3
+df['gender'].value_counts()
+plt.pyplot.pie(df["gender"].value_counts(),explode=[0.1,0.1],shadow=True,
+               labels= ["female","male"],autopct='%1.1f%%',startangle=-90)
+plt.pyplot.pie(df["diagnosis"].value_counts())
